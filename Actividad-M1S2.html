@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Mark Espinoza</title>
+    <style>
+    body {
+        background-color: #3b50a3;
+        /* azul intenso */
+        color: #ffffff;
+        /* blanco puro para mejor contraste */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: white;
+        color: #023047;
+        padding: 0.4rem 1rem;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    header nav {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    header nav button {
+        background-color: transparent;
+        border: 1.5px solid #023047;
+        color: #023047;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    header nav button:hover {
+        background-color: #8ecae6;
+        color: #023047;
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .nav-buttons {
+        margin-top: 1rem;
+    }
+
+    .nav-buttons button {
+        background-color: #0a9396;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: none;
+        margin: 0 0.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons button:hover {
+        background-color: #94d2bd;
+        color: #003844;
+    }
+
+    .nav-buttons a {
+        text-decoration: none;
+        background-color: #0a9396;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin: 0 0.5rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons a:hover {
+        background-color: #94d2bd;
+        color: #003844;
+    }
+
+    main {
+        background-color: #3b50a3;
+        /* azul intenso */
+        max-width: 900px;
+        margin: 50px auto 40px;
+        padding: 1rem;
+        border-radius: 0;
+        box-shadow: none;
+        color: #ffffff;
+        /* blanco puro para texto general */
+    }
+
+    main section {
+        background-color: transparent;
+        padding: 1rem 0;
+        margin: 0 auto;
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 900px;
+    }
+
+    /* Centrar el contenido del section 'sobre-mi' */
+    #sobre-mi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* centra vertical */
+        align-items: center;
+        /* centra horizontal */
+        min-height: 60vh;
+        /* para que tenga altura suficiente para centrar */
+        text-align: center;
+        /* para centrar texto */
+        padding: 2rem;
+        /* un poco de espacio */
+        color: white;
+        /* texto claro si el fondo es oscuro */
+    }
+
+    h1,
+    h2 {
+        margin-top: 0;
+    }
+
+    .proyecto {
+        margin-bottom: 2rem;
+    }
+
+    /* Cambié estos colores para que tengan buen contraste en fondo oscuro */
+    .tecnologias,
+    .visualizaciones {
+        font-style: italic;
+        color: #c7d2fe; /* un celeste claro y legible */
+    }
+
+    footer {
+        background-color: white;
+        color: #023047;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 0.75rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        border-top: 1px solid #ccc;
+    }
+
+    footer a {
+        color: #219ebc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #023047;
+        text-decoration: underline;
+    }
+
+    .slash {
+        margin: 0 20px;
+    }
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Mark Espinoza Mora
+            <span class="slash"> /</span>
+            Analista de Datos
+        </h1>
+        <nav>
+            <button onclick="mostrarSeccion('sobre-mi')">Sobre mí</button>
+            <button onclick="mostrarSeccion('proyectos')">Proyectos</button>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Mi nombre es Mark Espinoza y soy un analista de datos con formación en informática.
+                Me especializo en la resolución de problemas a través del análisis y visualización de datos,
+                utilizando herramientas como Python, SQL y Power BI. Tengo un interés particular en bases de datos
+                y sistemas empresariales, y disfruto transformar datos en conocimiento útil para la toma de decisiones.
+            </p>
+        </section>
+
+        <section id="proyectos" style="display: none">
+            <h2>Proyectos Destacados</h2>
+
+            <div class="proyecto">
+                <h3>Algoritmos de Búsqueda de Patrones Periódicos en Bases de Datos Espacio-Temporales</h3>
+                <p>
+                    Participé en un proyecto de investigación orientado a mejorar algoritmos de detección de patrones
+                    en grandes volúmenes de datos espacio-temporales. Implementé y optimicé estos algoritmos usando
+                    Python y SQL, y utilicé Power BI para visualizar los resultados. El rendimiento de los algoritmos
+                    mejoró en un 35 %, facilitando la interpretación de patrones temporales repetitivos en los datos.
+                </p>
+                <p class="tecnologias"><strong>Tecnologías:</strong> Python, SQL, Power BI</p>
+                <p class="visualizaciones"><strong>Visualizaciones:</strong> Series temporales, mapas
+                    espacio-temporales,
+                    tablas comparativas</p>
+            </div>
+
+            <div class="proyecto">
+                <h3>Análisis de Ventas y Segmentación de Clientes para una PyME</h3>
+                <p>
+                    Analicé datos de clientes y productos para una tienda en línea, identificando patrones de compra
+                    mediante técnicas de segmentación como RFM y K-Means. Usé Python y Power BI para procesar y
+                    visualizar
+                    los datos. Como resultado, se diseñaron campañas de marketing más efectivas, aumentando la retención
+                    de clientes en un 20 %.
+                </p>
+                <p class="tecnologias"><strong>Tecnologías:</strong> Python (pandas, scikit-learn), Power BI, MySQL,
+                    Excel
+                </p>
+                <p class="visualizaciones"><strong>Visualizaciones:</strong> Dashboards por segmento, gráficos de
+                    dispersión, tablas de productos</p>
+            </div>
+
+            <div class="proyecto">
+                <h3>Integración de Datos de Producción con ERP (SAP)</h3>
+                <p>
+                    Desarrollé una solución para automatizar reportes de producción en un entorno simulado de SAP,
+                    integrando datos en tiempo real desde sensores de planta. Utilicé Excel (Power Query, macros), SQL
+                    Server
+                    y Power BI para construir reportes interactivos, lo que redujo en un 50 % el tiempo dedicado a la
+                    generación
+                    de informes manuales.
+                </p>
+                <p class="tecnologias"><strong>Tecnologías:</strong> Excel (macros, Power Query), SQL Server, Power BI,
+                    SAP
+                    simulado</p>
+                <p class="visualizaciones"><strong>Visualizaciones:</strong> KPIs de producción, Gantt de órdenes,
+                    reportes
+                    dinámicos</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Talcahuano | +56 9 4231 4425 |
+            <a href="mailto:mark.espinoza@example.com">mark.espinoza@example.com</a> |
+            <a href="https://www.linkedin.com/in/mark-espinoza-mora-5b72ba194" target="_blank"
+                rel="noopener">LinkedIn</a> |
+            <a href="https://github.com/maespinm" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p>© 2025 Mark Espinoza. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+function mostrarSeccion(id) {
+    const secciones = ['sobre-mi', 'proyectos'];
+    secciones.forEach(seccion => {
+        if (seccion === id) {
+            if (seccion === 'sobre-mi') {
+                document.getElementById(seccion).style.display = 'flex'; // para centrar vertical
+            } else {
+                document.getElementById(seccion).style.display = 'block'; // para diseño normal
+            }
+        } else {
+            document.getElementById(seccion).style.display = 'none';
+        }
+    });
+}
+
+</script>
+
+</html>
