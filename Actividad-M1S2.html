@@ -6,184 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio - Mark Espinoza</title>
     <style>
-    body {
-        background-color: #3b50a3;
-        /* azul intenso */
-        color: #ffffff;
-        /* blanco puro para mejor contraste */
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+        body {
+            background: linear-gradient(to bottom, #3b50a3 70%, #f0f4ff 100%);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
 
-    header {
-        background-color: white;
-        color: #023047;
-        padding: 0.4rem 1rem;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 1000;
-        font-size: 0.95rem;
-        border-bottom: 1px solid #ccc;
-    }
+        header {
+            background-color: white;
+            color: #023047;
+            padding: 0.4rem 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #ccc;
+        }
 
-    header nav {
-        display: flex;
-        gap: 0.5rem;
-    }
+        header nav {
+            display: flex;
+            gap: 0.5rem;
+        }
 
-    header nav button {
-        background-color: transparent;
-        border: 1.5px solid #023047;
-        color: #023047;
-        padding: 0.3rem 0.6rem;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        transition: all 0.3s ease;
-    }
+        header nav button {
+            background-color: transparent;
+            border: 1.5px solid #023047;
+            color: #023047;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
 
-    header nav button:hover {
-        background-color: #8ecae6;
-        color: #023047;
-        transform: scale(1.05);
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
+        header nav button:hover {
+            background-color: #8ecae6;
+            color: #023047;
+            transform: scale(1.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
 
-    header h1 {
-        margin: 0;
-        font-size: 1rem;
-        line-height: 1;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1;
+        }
 
-    .nav-buttons {
-        margin-top: 1rem;
-    }
+        .nav-buttons {
+            margin-top: 1rem;
+        }
 
-    .nav-buttons button {
-        background-color: #0a9396;
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        border: none;
-        margin: 0 0.5rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+        .nav-buttons button {
+            background-color: #0a9396;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            margin: 0 0.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-    .nav-buttons button:hover {
-        background-color: #94d2bd;
-        color: #003844;
-    }
+        .nav-buttons button:hover {
+            background-color: #94d2bd;
+            color: #003844;
+        }
 
-    .nav-buttons a {
-        text-decoration: none;
-        background-color: #0a9396;
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        margin: 0 0.5rem;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #0a9396;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
 
-    .nav-buttons a:hover {
-        background-color: #94d2bd;
-        color: #003844;
-    }
+        .nav-buttons a:hover {
+            background-color: #94d2bd;
+            color: #003844;
+        }
 
-    main {
-        background-color: #3b50a3;
-        /* azul intenso */
-        max-width: 900px;
-        margin: 50px auto 40px;
-        padding: 1rem;
-        border-radius: 0;
-        box-shadow: none;
-        color: #ffffff;
-        /* blanco puro para texto general */
-    }
+        main {
+            background-color: transparent;
+            /* azul intenso */
+            max-width: 900px;
+            margin: 50px auto 40px;
+            padding: 1rem;
+            border-radius: 0;
+            box-shadow: none;
+            color: #ffffff;
+            /* blanco puro para texto general */
+        }
 
-    main section {
-        background-color: transparent;
-        padding: 1rem 0;
-        margin: 0 auto;
-        border-radius: 0;
-        box-shadow: none;
-        max-width: 900px;
-    }
+        main section {
+            background-color: transparent;
+            padding: 1rem 0;
+            margin: 0 auto;
+            border-radius: 0;
+            box-shadow: none;
+            max-width: 900px;
+        }
 
-    /* Centrar el contenido del section 'sobre-mi' */
-    #sobre-mi {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* centra vertical */
-        align-items: center;
-        /* centra horizontal */
-        min-height: 60vh;
-        /* para que tenga altura suficiente para centrar */
-        text-align: center;
-        /* para centrar texto */
-        padding: 2rem;
-        /* un poco de espacio */
-        color: white;
-        /* texto claro si el fondo es oscuro */
-    }
+        /* Centrar el contenido del section 'sobre-mi' */
+        #sobre-mi {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* centra vertical */
+            align-items: center;
+            /* centra horizontal */
+            min-height: 60vh;
+            /* para que tenga altura suficiente para centrar */
+            text-align: center;
+            /* para centrar texto */
+            padding: 2rem;
+            /* un poco de espacio */
+            color: white;
+            /* texto claro si el fondo es oscuro */
+        }
 
-    h1,
-    h2 {
-        margin-top: 0;
-    }
+        h1,
+        h2 {
+            margin-top: 0;
+        }
 
-    .proyecto {
-        margin-bottom: 2rem;
-    }
+        .proyecto {
+            margin-bottom: 5rem;
+        }
 
-    /* Cambié estos colores para que tengan buen contraste en fondo oscuro */
-    .tecnologias,
-    .visualizaciones {
-        font-style: italic;
-        color: #c7d2fe; /* un celeste claro y legible */
-    }
+        /* Cambié estos colores para que tengan buen contraste en fondo oscuro */
+        .tecnologias,
+        .visualizaciones {
+            font-style: italic;
+            color: #c7d2fe;
+            /* un celeste claro y legible */
+        }
 
-    footer {
-        background-color: white;
-        color: #023047;
-        padding: 0.5rem;
-        text-align: center;
-        font-size: 0.75rem;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        border-top: 1px solid #ccc;
-    }
+        footer {
+            background-color: white;
+            color: #023047;
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-top: 1px solid #ccc;
+        }
 
-    footer a {
-        color: #219ebc;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
+        footer a {
+            color: #219ebc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-    footer a:hover {
-        color: #023047;
-        text-decoration: underline;
-    }
+        footer a:hover {
+            color: #023047;
+            text-decoration: underline;
+        }
 
-    .slash {
-        margin: 0 20px;
-    }
-</style>
+        .slash {
+            margin: 0 20px;
+        }
+    </style>
 
 
 
@@ -202,6 +202,7 @@
         <nav>
             <button onclick="mostrarSeccion('sobre-mi')">Sobre mí</button>
             <button onclick="mostrarSeccion('proyectos')">Proyectos</button>
+            <button onclick="mostrarSeccion('conocimientos')">Conocimientos</button>
         </nav>
     </header>
     <main>
@@ -213,6 +214,18 @@
                 utilizando herramientas como Python, SQL y Power BI. Tengo un interés particular en bases de datos
                 y sistemas empresariales, y disfruto transformar datos en conocimiento útil para la toma de decisiones.
             </p>
+            <button onclick="" style="
+        margin-top: 1rem;
+        background-color: #0a9396;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+                    transition: background-color 0.3s ease;
+    ">Contáctame</button>
         </section>
 
         <section id="proyectos" style="display: none">
@@ -227,9 +240,8 @@
                     mejoró en un 35 %, facilitando la interpretación de patrones temporales repetitivos en los datos.
                 </p>
                 <p class="tecnologias"><strong>Tecnologías:</strong> Python, SQL, Power BI</p>
-                <p class="visualizaciones"><strong>Visualizaciones:</strong> Series temporales, mapas
-                    espacio-temporales,
-                    tablas comparativas</p>
+                <img src="1.jpg" alt="Visualización del proyecto de algoritmos de búsqueda"
+                    style="width: 50%; display: block; margin: 0 auto 1rem; border-radius: 10px;" />
             </div>
 
             <div class="proyecto">
@@ -244,10 +256,9 @@
                 <p class="tecnologias"><strong>Tecnologías:</strong> Python (pandas, scikit-learn), Power BI, MySQL,
                     Excel
                 </p>
-                <p class="visualizaciones"><strong>Visualizaciones:</strong> Dashboards por segmento, gráficos de
-                    dispersión, tablas de productos</p>
+                <img src="2.png" alt="Visualización del proyecto de algoritmos de búsqueda"
+                    style="width: 50%; display: block; margin: 0 auto 1rem; border-radius: 10px;" />
             </div>
-
             <div class="proyecto">
                 <h3>Integración de Datos de Producción con ERP (SAP)</h3>
                 <p>
@@ -261,11 +272,43 @@
                 <p class="tecnologias"><strong>Tecnologías:</strong> Excel (macros, Power Query), SQL Server, Power BI,
                     SAP
                     simulado</p>
-                <p class="visualizaciones"><strong>Visualizaciones:</strong> KPIs de producción, Gantt de órdenes,
-                    reportes
-                    dinámicos</p>
+                <img src="3.webp" alt="Visualización del proyecto de algoritmos de búsqueda"
+                    style="width: 50%; display: block; margin: 0 auto 1rem; border-radius: 10px;" />
             </div>
         </section>
+        <section id="conocimientos" style="display: none">
+            <h2 style="text-align: center;">Conocimientos</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+                <div style="flex: 1 1 300px;">
+                    <h3>Habilidades Técnicas</h3>
+                    <p><strong>Lenguajes de programación:</strong> C, Java, Python</p>
+                    <p><strong>Bases de datos:</strong></p>
+                    <ul>
+                        <li>Oracle</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>Google BigQuery</li>
+                    </ul>
+                    <p><strong>Desarrollo web:</strong></p>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Node.js, React, Angular</li>
+                    </ul>
+                </div>
+                <div style="flex: 1 1 300px;">
+                    <h3>Herramientas y Tecnologías</h3>
+                    <p><strong>Análisis de Datos:</strong> R, RStudio, Tableau</p>
+                    <p><strong>Control de versiones:</strong> GitHub, GitLab</p>
+                    <p><strong>Ofimática:</strong> Microsoft Office, Microsoft Excel</p>
+                    <p><strong>Otros:</strong> Bizagi, SAP (Nivel Estudiante)</p>
+                    <br>
+                    <h3>Idiomas:</h3>
+                    <p><strong>Español:</strong> Nativo</p>
+                    <p><strong>Ingles:</strong> Medio (B2)</p>
+                </div>
+        </section>
+
     </main>
     <footer>
         <p>Talcahuano | +56 9 4231 4425 |
@@ -278,20 +321,20 @@
     </footer>
 </body>
 <script>
-function mostrarSeccion(id) {
-    const secciones = ['sobre-mi', 'proyectos'];
-    secciones.forEach(seccion => {
-        if (seccion === id) {
-            if (seccion === 'sobre-mi') {
-                document.getElementById(seccion).style.display = 'flex'; // para centrar vertical
+    function mostrarSeccion(id) {
+        const secciones = ['sobre-mi', 'proyectos', 'conocimientos'];
+        secciones.forEach(seccion => {
+            if (seccion === id) {
+                if (seccion === 'sobre-mi') {
+                    document.getElementById(seccion).style.display = 'flex'; // para centrar vertical
+                } else {
+                    document.getElementById(seccion).style.display = 'block'; // para diseño normal
+                }
             } else {
-                document.getElementById(seccion).style.display = 'block'; // para diseño normal
+                document.getElementById(seccion).style.display = 'none';
             }
-        } else {
-            document.getElementById(seccion).style.display = 'none';
-        }
-    });
-}
+        });
+    }
 
 </script>
 
